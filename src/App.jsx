@@ -120,7 +120,7 @@ function App ()
       <ul>
         { notes.map( ( note, index ) => (
           <li key={ index }>
-            <strong>{ note.title }</strong> <hr /> { note.text } <br />
+            <strong>{ note.title }</strong> <hr /> { note.text } <br /><br />
             <small>{ note.timestamp }</small> <br />
             <div className="edit-button">
             <button onClick={ () => editNote( index ) }>Edit</button>
